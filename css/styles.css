@@ -1,0 +1,20 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: ##F0F2F3;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #62A5A1;
+  border-radius: 0;
+  border: 0;
+}
+
+#logo-img {
+  background: url('../images/logo.svg') no-repeat;
+  width: 300px;
+  height: 45px;
+  margin: 10px 15px 10px 0;
+}
