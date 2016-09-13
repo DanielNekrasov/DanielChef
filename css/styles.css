@@ -1,6 +1,6 @@
 body {
   font-size: 16px;
-  color: #fff;
+  color: #2E353C;
   background-color: #F0F2F3;
   font-family: 'Oxygen', sans-serif;
 }
@@ -32,7 +32,9 @@ body {
 #nav-list a:hover {
   color: #2E353C;
 }
-
+.navbar-default .navbar-nav .active>a{
+  background-color:#2E353C;
+}
 
 .navbar-header button.navbar-toggle{
   border: none;
@@ -91,12 +93,14 @@ body {
 /* END HOME PAGE */
 
 /* FOOTER */
+
 .panel-footer {
   margin-top: 30px;
   padding-top: 35px;
   padding-bottom: 30px;
   background-color: #2E353C;
   border-top: 0;
+  color: #fff;
 }
 .panel-footer div.row {
   margin-bottom: 35px;
@@ -120,6 +124,73 @@ body {
 }
 /* END FOOTER */
 
+/* MENU CATEGORIES PAGE */
+.category-tile { 
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #2E353C;
+  color: #fff;
+  opacity: .7;
+}
+.category-tile:hover {
+  box-shadow: 0 2px 5px 2px #2E353C;
+}
+
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
+/* END MENU CATEGORIES PAGE */
+
+/* SINGLE CATEGORY PAGE */
+.menu-item-tile {
+  margin-bottom: 25px;
+}
+.menu-item-tile hr {
+  width: 80%;
+  border:1px solid #62A5A1;
+}
+.menu-item-tile .menu-item-price {
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span {
+  font-size: .6em;
+}
+.menu-item-photo {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+
+.menu-item-description {
+  padding-right: 30px;
+}
+h3.menu-item-title {
+  margin: 0 0 10px;
+}
+.menu-item-details {
+  font-size: .9em;
+  font-style: italic;
+}
+/* END SINGLE CATEGORY PAGE */
 
 
 /********** Large devices only **********/
@@ -201,9 +272,22 @@ body {
     margin: 0 auto 15px;
   }
 
-}
+  #menu-tile, #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
 
-/* END HEADER */
+  .menu-item-photo {
+    margin-right: auto;
+  }
+  .menu-item-tile .menu-item-price {
+    text-align: center;
+  }
+  .menu-item-description {
+    text-align: center;
+  }
+
+}
 
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
@@ -219,5 +303,13 @@ body {
   #menu-tile, #specials-tile {
     width: 280px;
     margin: 0 auto 15px;
+  }
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
   }
 }
