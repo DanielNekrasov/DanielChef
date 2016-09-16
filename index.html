@@ -33,7 +33,7 @@
 
         <div id="collapsable-nav" class="collapse navbar-collapse">
            <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li class="visible-xs active">
+            <li id="navHomeButton" class="visible-xs active">
               <a href="index.html">
                 <span class="glyphicon glyphicon-home"></span> Home</a>
             </li>
@@ -42,8 +42,8 @@
                 <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu
               </a>
             </li>
-            <li>
-              <a href="#">
+            <li id="navAboutButton">
+              <a href="#" onclick="$dc.loadAbout();">
                 <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">About
               </a>
             </li>
@@ -66,20 +66,20 @@
     <div class="container">
       <div class="row">
         <section id="hours" class="col-sm-4">
-          <span>Часы работы:</span><br>
+          <span>Hours:</span><br>
           Sun-Thurs: 11:15am - 10:00pm<br>
           Fri: 11:15am - 2:30pm<br>
           Saturday Closed
           <hr class="visible-xs">
         </section>
         <section id="address" class="col-sm-4">
-          <span>Адрес:</span><br>
-          Нытвенский р-н, c. Мокино,<br>
-           ул. Полевая, д.9
+          <span>Addres:</span><br>
+           Mokino village,<br>
+           Polevaya st.
           <hr class="visible-xs">
         </section>
         <section id="testimonials" class="col-sm-4">
-          <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+          <p>"We are making delicious and beautifull desserts"</p>
         </section>
       </div>
       <div class="text-center">&copy; Copyright Daniel Chef 2016</div>
