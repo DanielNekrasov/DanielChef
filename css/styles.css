@@ -13,10 +13,10 @@ body {
 }
 
 #logo-img {
-  background: url('../images/logo.png') no-repeat;
+  background: url('../images/logo.svg') no-repeat;
   width: 300px;
   height: 45px;
-  margin: 10px 15px 10px 0;
+  margin: 10px 15px 10px 10px;
 }
 
 #nav-list {
